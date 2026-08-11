@@ -22,12 +22,12 @@ const finishes: { name: string; note: string; style: React.CSSProperties }[] = [
 export function PageFinishes() {
   return (
     <Sheet index={6} label="Cores e acabamentos">
-      <div className="absolute inset-x-[18mm] top-[24mm] flex items-end justify-between">
+      <div className="absolute inset-x-[13mm] top-[24mm] flex items-end justify-between">
         <div>
           <span className="eyebrow" style={{ color: "var(--azure)" }}>
             Cores &amp; Acabamentos
           </span>
-          <h2 className="display-lg mt-[7mm] text-[27pt]">
+          <h2 className="display-lg mt-[7mm] text-[19pt]">
             O detalhe
             <br />
             que define
@@ -35,14 +35,14 @@ export function PageFinishes() {
             o projeto.
           </h2>
         </div>
-        <p className="body-text w-[70mm] text-[9pt]">
+        <p className="body-text w-[58mm] text-[9pt]">
           O acabamento é a última decisão do projeto e a primeira coisa que se percebe. As amostras
           abaixo são referências de cor e textura; tons finais podem variar conforme linha e lote de
           produção.
         </p>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[104mm] grid grid-cols-4 gap-x-[6mm] gap-y-[10mm]">
+      <div className="absolute inset-x-[13mm] top-[104mm] grid grid-cols-4 gap-x-[6mm] gap-y-[10mm]">
         {finishes.map((f) => (
           <div key={f.name}>
             <div className="h-[38mm] w-full" style={f.style} />
@@ -52,7 +52,7 @@ export function PageFinishes() {
         ))}
       </div>
 
-      <div className="absolute inset-x-[18mm] bottom-[26mm]">
+      <div className="absolute inset-x-[13mm] bottom-[26mm]">
         <div className="hairline mb-[5mm]" />
         <span className="caption">
           Pintura eletrostática · Anodização · Padrões amadeirados sob consulta
@@ -78,14 +78,14 @@ export function PageSolutions() {
       <Figure
         src={solutionsImg}
         alt="Entrada de edifício com porta de vidro e divisórias de alumínio"
-        className="absolute right-0 top-0 h-[128mm] w-[126mm]"
+        className="absolute right-0 top-0 h-[128mm] w-[104mm]"
       />
 
-      <div className="absolute left-[18mm] top-[30mm] w-[62mm]">
+      <div className="absolute left-[13mm] top-[30mm] w-[52mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           Aplicações
         </span>
-        <h2 className="display-lg mt-[7mm] text-[21pt]">
+        <h2 className="display-lg mt-[7mm] text-[18pt]">
           Soluções
           <br />
           para cada
@@ -106,7 +106,7 @@ export function PageSolutions() {
         </ul>
       </div>
 
-      <div className="absolute left-[18mm] top-[142mm] w-[84mm]">
+      <div className="absolute left-[13mm] top-[142mm] w-[68mm]">
         <Figure
           src={project2}
           alt="Escada interna com guarda-corpo de vidro temperado"
@@ -115,7 +115,7 @@ export function PageSolutions() {
         <span className="caption mt-[3mm] block">Guarda-corpos · Vidro temperado</span>
       </div>
 
-      <div className="absolute right-[18mm] top-[142mm] w-[68mm]">
+      <div className="absolute right-[13mm] top-[142mm] w-[56mm]">
         <p className="body-text text-[9pt]">
           Cada abertura resolve um problema diferente: luz, ventilação, vedação, circulação,
           segurança. Trabalhamos a partir do desenho do arquiteto para escolher a linha, o vidro e o
@@ -128,7 +128,7 @@ export function PageSolutions() {
       <Figure
         src={corporate}
         alt="Fachada corporativa em vidro e alumínio"
-        className="absolute bottom-[26mm] right-[18mm] h-[42mm] w-[68mm]"
+        className="absolute bottom-[26mm] right-[13mm] h-[42mm] w-[56mm]"
       />
     </Sheet>
   );
@@ -144,11 +144,11 @@ const projects = [
 export function PagePortfolio() {
   return (
     <Sheet index={8} label="Portfólio">
-      <div className="absolute inset-x-[18mm] top-[24mm]">
+      <div className="absolute inset-x-[13mm] top-[24mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           Portfólio
         </span>
-        <h2 className="display-lg mt-[7mm] max-w-[120mm] text-[27pt]">
+        <h2 className="display-lg mt-[7mm] max-w-[100mm] text-[19pt]">
           Projetos que
           <br />
           falam por nós.
@@ -158,9 +158,9 @@ export function PagePortfolio() {
       <Figure
         src={project1}
         alt="Residência contemporânea ao anoitecer com grandes painéis de vidro"
-        className="absolute left-[18mm] top-[76mm] h-[104mm] w-[110mm]"
+        className="absolute left-[13mm] top-[76mm] h-[104mm] w-[90mm]"
       />
-      <div className="absolute right-[18mm] top-[76mm] w-[54mm]">
+      <div className="absolute right-[13mm] top-[76mm] w-[44mm]">
         {projects.map((p) => (
           <div key={p.nome} className="mb-[9mm]">
             <div className="hairline mb-[4mm]" />
@@ -178,7 +178,7 @@ export function PagePortfolio() {
       <Figure
         src={project3}
         alt="Grande vão aberto integrando sala e terraço com piscina"
-        className="absolute inset-x-[18mm] bottom-[24mm] h-[76mm]"
+        className="absolute inset-x-[13mm] bottom-[24mm] h-[76mm]"
       />
     </Sheet>
   );
@@ -198,24 +198,24 @@ export function PageClosing() {
         style={{ background: "linear-gradient(180deg, rgba(11,18,31,0.25), rgba(11,18,31,0.95))" }}
       />
 
-      <div className="absolute inset-x-[18mm] top-[112mm]">
-        <div className="mb-[7mm] h-[1px] w-[26mm]" style={{ backgroundColor: "var(--azure)" }} />
-        <h2 className="display-lg max-w-[150mm] text-[24pt]" style={{ color: "var(--paper)" }}>
+      <div className="absolute inset-x-[13mm] top-[112mm]">
+        <div className="mb-[7mm] h-[1px] w-[21mm]" style={{ backgroundColor: "var(--azure)" }} />
+        <h2 className="display-lg max-w-[120mm] text-[20pt]" style={{ color: "var(--paper)" }}>
           Seu projeto merece
           <br />
           qualidade em cada detalhe.
         </h2>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[190mm]">
-        <p className="body-text max-w-[120mm] text-[9pt]" style={{ color: "rgba(255,255,255,0.72)" }}>
+      <div className="absolute inset-x-[13mm] top-[190mm]">
+        <p className="body-text max-w-[100mm] text-[9pt]" style={{ color: "rgba(255,255,255,0.72)" }}>
           Trabalhamos em parceria com arquitetos, engenheiros, construtoras e profissionais da
           construção para transformar especificações em soluções executáveis — com produção
           especializada, prazo e mão de obra própria.
         </p>
       </div>
 
-      <div className="absolute inset-x-[18mm] bottom-[24mm]">
+      <div className="absolute inset-x-[13mm] bottom-[24mm]">
         <div className="mb-[9mm] h-[1px] w-full" style={{ backgroundColor: "rgba(255,255,255,0.2)" }} />
         <div className="flex items-end justify-between">
           <div>
@@ -254,7 +254,7 @@ export function PageClosing() {
                 src="/qr-instagram.svg"
                 alt="QR Code do Instagram da Vianna Vidros e Esquadrias"
                 loading="lazy"
-                className="h-[26mm] w-[26mm]"
+                className="h-[26mm] w-[21mm]"
               />
             </div>
             <span className="caption mt-[3mm] block text-[5.6pt]" style={{ color: "rgba(255,255,255,0.5)" }}>
