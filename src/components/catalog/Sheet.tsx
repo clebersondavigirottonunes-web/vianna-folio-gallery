@@ -1,5 +1,8 @@
 import type { ReactNode } from "react";
 
+import logoNavy from "@/assets/logo-navy.png.asset.json";
+import logoLight from "@/assets/logo-light.png.asset.json";
+
 export function Sheet({
   children,
   index,
