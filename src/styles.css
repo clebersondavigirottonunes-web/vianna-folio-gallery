@@ -178,11 +178,11 @@
   }
 }
 
-/* A4 = 210mm x 297mm */
+/* Formato do catálogo = 170mm x 300mm (proporção 17:30) */
 @utility a4 {
   position: relative;
-  width: 210mm;
-  height: 297mm;
+  width: 170mm;
+  height: 300mm;
   overflow: hidden;
   background-color: var(--paper);
   color: var(--ink);
@@ -199,8 +199,8 @@
 @utility display-xl {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 44pt;
-  line-height: 0.92;
+  font-size: 36pt;
+  line-height: 0.94;
   letter-spacing: -0.025em;
   text-transform: uppercase;
 }
@@ -208,8 +208,8 @@
 @utility display-lg {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 30pt;
-  line-height: 0.98;
+  font-size: 25pt;
+  line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -217,7 +217,7 @@
 @utility display-md {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 17pt;
+  font-size: 15pt;
   line-height: 1.05;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -266,7 +266,7 @@
 
 @media print {
   @page {
-    size: A4 portrait;
+    size: 170mm 300mm;
     margin: 0;
   }
   body {
