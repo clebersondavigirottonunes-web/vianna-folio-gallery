@@ -4,6 +4,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-azure: var(--azure);
+  --color-paper: var(--paper);
+  --color-stone: var(--stone);
+  --color-ink: var(--ink);
+}
+
+
 /*
  * Design system definition.
  *
@@ -140,5 +153,137 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+  }
+}
+
+/* ==========================================================
+   VIANNA — sistema gráfico do catálogo (A4 vertical)
+   ========================================================== */
+
+:root {
+  --navy: oklch(0.31 0.072 258);
+  --navy-deep: oklch(0.22 0.058 258);
+  --azure: oklch(0.68 0.098 240);
+  --paper: oklch(0.995 0.001 250);
+  --stone: oklch(0.945 0.004 250);
+  --ink: oklch(0.16 0.008 250);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--stone);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* A4 = 210mm x 297mm */
+@utility a4 {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  font-size: 7.6pt;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+@utility display-xl {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 44pt;
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+@utility display-lg {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 30pt;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@utility display-md {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 17pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@utility body-text {
+  font-size: 10pt;
+  line-height: 1.72;
+  font-weight: 300;
+  color: color-mix(in oklab, var(--ink) 74%, transparent);
+}
+
+@utility caption {
+  font-family: var(--font-display);
+  font-size: 6.6pt;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--ink) 55%, transparent);
+}
+
+@utility hairline {
+  height: 1px;
+  background-color: color-mix(in oklab, var(--ink) 18%, transparent);
+}
+
+/* escala de visualização em tela — não afeta a impressão */
+.catalog-scale {
+  zoom: 1;
+}
+@media (max-width: 1200px) {
+  .catalog-scale {
+    zoom: 0.78;
+  }
+}
+@media (max-width: 900px) {
+  .catalog-scale {
+    zoom: 0.6;
+  }
+}
+@media (max-width: 640px) {
+  .catalog-scale {
+    zoom: 0.42;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .catalog-scale {
+    zoom: 1 !important;
+  }
+  .a4-sheet {
+    break-after: page;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+  .a4-sheet:last-child {
+    break-after: auto;
   }
 }
