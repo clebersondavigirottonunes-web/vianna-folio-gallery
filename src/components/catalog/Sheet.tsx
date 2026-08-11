@@ -82,7 +82,7 @@ export function Figure({
   eager?: boolean;
 }) {
   return (
-    <figure className={`relative overflow-hidden ${className}`}>
+    <figure className={`overflow-hidden ${className}`}>
       <img
         src={src}
         alt={alt}
