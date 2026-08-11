@@ -25,7 +25,7 @@ export function Sheet({
     >
       {children}
       {!bleed && (
-        <footer className="absolute inset-x-[18mm] bottom-[10mm] flex items-end justify-between">
+        <footer className="absolute inset-x-[13mm] bottom-[10mm] flex items-end justify-between">
           <span className="caption" style={dark ? { color: "rgba(255,255,255,0.55)" } : undefined}>
             Vianna Vidros e Esquadrias
           </span>

@@ -23,18 +23,18 @@ export function PageCover() {
         }}
       />
 
-      <div className="absolute inset-x-[18mm] top-[16mm] flex items-start justify-between">
+      <div className="absolute inset-x-[13mm] top-[16mm] flex items-start justify-between">
         <Wordmark light size={1.15} />
         <span className="eyebrow text-[6.6pt]" style={{ color: "rgba(255,255,255,0.72)" }}>
           Catálogo Institucional
         </span>
       </div>
 
-      <div className="absolute inset-x-[18mm] bottom-[20mm]">
-        <div className="mb-[8mm] h-[1px] w-[26mm]" style={{ backgroundColor: "var(--azure)" }} />
+      <div className="absolute inset-x-[13mm] bottom-[20mm]">
+        <div className="mb-[8mm] h-[1px] w-[21mm]" style={{ backgroundColor: "var(--azure)" }} />
         <h1
-          className="display-xl max-w-[150mm]"
-          style={{ color: "var(--paper)", fontSize: "40pt" }}
+          className="display-xl max-w-[120mm]"
+          style={{ color: "var(--paper)", fontSize: "33pt" }}
         >
           Soluções que
           <br />
@@ -60,9 +60,9 @@ export function PagePresentation() {
       <Figure
         src={interior1}
         alt="Sala minimalista com grandes portas de correr em alumínio e vidro"
-        className="absolute left-0 top-0 h-[196mm] w-[86mm]"
+        className="absolute left-0 top-0 h-[196mm] w-[70mm]"
       />
-      <div className="absolute left-[18mm] top-[202mm] w-[68mm]">
+      <div className="absolute left-[13mm] top-[202mm] w-[56mm]">
         <div className="hairline mb-[4mm]" />
         <span className="caption">Residencial · Grandes vãos</span>
         <p className="font-serif mt-[10mm] text-[15pt] italic leading-[1.35]" style={{ color: "var(--navy)" }}>
@@ -76,11 +76,11 @@ export function PagePresentation() {
         </p>
       </div>
 
-      <div className="absolute right-[18mm] top-[24mm] w-[92mm]">
+      <div className="absolute right-[13mm] top-[24mm] w-[74mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           A empresa
         </span>
-        <h2 className="display-lg mt-[7mm]" style={{ fontSize: "26pt" }}>
+        <h2 className="display-lg mt-[7mm]" style={{ fontSize: "22pt" }}>
           Experiência
           <br />
           que se
@@ -105,7 +105,7 @@ export function PagePresentation() {
         <div className="mt-[8mm] flex items-end gap-[6mm]">
           <span
             className="font-display leading-[0.8]"
-            style={{ fontSize: "58pt", fontWeight: 600, color: "var(--navy)", letterSpacing: "-0.04em" }}
+            style={{ fontSize: "48pt", fontWeight: 600, color: "var(--navy)", letterSpacing: "-0.04em" }}
           >
             +15
           </span>
@@ -117,7 +117,7 @@ export function PagePresentation() {
         </div>
       </div>
 
-      <div className="absolute bottom-[26mm] right-[18mm] w-[92mm]">
+      <div className="absolute bottom-[26mm] right-[13mm] w-[74mm]">
         <div className="hairline mb-[5mm]" />
         <span className="caption">Santa Rosa · Rio Grande do Sul · Brasil</span>
       </div>
@@ -162,18 +162,18 @@ const process = [
 export function PagePositioning() {
   return (
     <Sheet index={3} label="Posicionamento">
-      <div className="absolute inset-x-[18mm] top-[26mm]">
+      <div className="absolute inset-x-[13mm] top-[26mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           Posicionamento
         </span>
-        <h2 className="display-xl mt-[8mm] max-w-[160mm]">
+        <h2 className="display-xl mt-[8mm] max-w-[142mm]">
           Mais do que produtos.
           <br />
           Entregamos soluções.
         </h2>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[112mm] grid grid-cols-2 gap-x-[14mm] gap-y-[16mm]">
+      <div className="absolute inset-x-[13mm] top-[112mm] grid grid-cols-2 gap-x-[14mm] gap-y-[16mm]">
         {concepts.map((c) => (
           <div key={c.n}>
             <div className="hairline mb-[6mm]" />
@@ -189,14 +189,14 @@ export function PagePositioning() {
         ))}
       </div>
 
-      <div className="absolute inset-x-[18mm] bottom-[24mm]">
+      <div className="absolute inset-x-[13mm] bottom-[24mm]">
         <div className="hairline mb-[6mm]" />
         <span className="eyebrow" style={{ color: "var(--navy)" }}>
           Do primeiro contato à instalação
         </span>
         <div className="mt-[6mm] flex justify-between">
           {process.map(([n, t]) => (
-            <div key={n} className="w-[26mm]">
+            <div key={n} className="w-[21mm]">
               <span
                 className="font-display block text-[13pt] font-medium leading-none"
                 style={{ color: "var(--navy)" }}
@@ -227,10 +227,10 @@ export function PageAluminum() {
       <Figure
         src={detailFrame}
         alt="Detalhe de perfil de esquadria de alumínio preto encontrando o vidro"
-        className="absolute right-0 top-0 h-[150mm] w-[104mm]"
+        className="absolute right-0 top-0 h-[150mm] w-[85mm]"
       />
 
-      <div className="absolute left-[18mm] top-[26mm] w-[76mm]">
+      <div className="absolute left-[13mm] top-[26mm] w-[62mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           Produto
         </span>
@@ -250,7 +250,7 @@ export function PageAluminum() {
         </p>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[170mm]">
+      <div className="absolute inset-x-[13mm] top-[170mm]">
         <span className="eyebrow" style={{ color: "var(--navy)" }}>
           Linhas de trabalho
         </span>
@@ -265,7 +265,7 @@ export function PageAluminum() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="display-md w-[50mm] shrink-0 text-[13pt]">{t}</h3>
+                <h3 className="display-md w-[40mm] shrink-0 text-[13pt]">{t}</h3>
                 <p className="body-text text-[8.6pt]">{d}</p>
               </div>
             </div>
@@ -297,11 +297,11 @@ export function PageGlass() {
         alt="Fachada envidraçada refletindo o céu"
         className="absolute inset-x-0 top-0 h-[124mm]"
       />
-      <div className="absolute left-[18mm] top-[86mm] w-[110mm] bg-paper px-[10mm] py-[9mm]">
+      <div className="absolute left-[13mm] top-[86mm] w-[90mm] bg-paper px-[10mm] py-[9mm]">
         <span className="eyebrow" style={{ color: "var(--azure)" }}>
           Vidros
         </span>
-        <h2 className="display-lg mt-[5mm] text-[22pt]">
+        <h2 className="display-lg mt-[5mm] text-[19pt]">
           A transparência
           <br />
           como elemento
@@ -310,14 +310,14 @@ export function PageGlass() {
         </h2>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[150mm] w-[110mm]">
+      <div className="absolute inset-x-[13mm] top-[150mm] w-[90mm]">
         <p className="body-text text-[9.4pt]">
           O vidro define a relação entre interior e paisagem. Selecionamos tipo, espessura e
           composição de acordo com desempenho, segurança e intenção estética de cada projeto.
         </p>
       </div>
 
-      <div className="absolute inset-x-[18mm] top-[182mm] grid grid-cols-2 gap-x-[12mm]">
+      <div className="absolute inset-x-[13mm] top-[182mm] grid grid-cols-2 gap-x-[12mm]">
         {glasses.map(([t, d]) => (
           <div key={t}>
             <div className="hairline" />
