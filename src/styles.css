@@ -4,6 +4,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-azure: var(--azure);
+  --color-paper: var(--paper);
+  --color-stone: var(--stone);
+  --color-ink: var(--ink);
+}
+
+
 /*
  * Design system definition.
  *
