@@ -62,8 +62,18 @@ export function PagePresentation() {
         alt="Sala minimalista com grandes portas de correr em alumínio e vidro"
         className="absolute left-0 top-0 h-[196mm] w-[86mm]"
       />
-      <div className="absolute bottom-[26mm] left-0 w-[86mm] px-[18mm]">
+      <div className="absolute left-[18mm] top-[202mm] w-[68mm]">
+        <div className="hairline mb-[4mm]" />
         <span className="caption">Residencial · Grandes vãos</span>
+        <p className="font-serif mt-[10mm] text-[15pt] italic leading-[1.35]" style={{ color: "var(--navy)" }}>
+          Vidro e alumínio
+          <br />
+          medidos, cortados
+          <br />
+          e instalados
+          <br />
+          para um projeto só.
+        </p>
       </div>
 
       <div className="absolute right-[18mm] top-[24mm] w-[92mm]">
@@ -90,11 +100,9 @@ export function PagePresentation() {
           Com sede em Santa Rosa, atendemos toda a região e, conforme a necessidade de cada projeto,
           também atuamos em outras regiões do Brasil e fora do país.
         </p>
-      </div>
 
-      <div className="absolute bottom-[34mm] right-[18mm] w-[92mm]">
-        <div className="hairline mb-[7mm]" />
-        <div className="flex items-end gap-[6mm]">
+        <div className="hairline mt-[12mm]" />
+        <div className="mt-[8mm] flex items-end gap-[6mm]">
           <span
             className="font-display leading-[0.8]"
             style={{ fontSize: "58pt", fontWeight: 600, color: "var(--navy)", letterSpacing: "-0.04em" }}
@@ -108,6 +116,12 @@ export function PagePresentation() {
           </span>
         </div>
       </div>
+
+      <div className="absolute bottom-[26mm] right-[18mm] w-[92mm]">
+        <div className="hairline mb-[5mm]" />
+        <span className="caption">Santa Rosa · Rio Grande do Sul · Brasil</span>
+      </div>
+
     </Sheet>
   );
 }
