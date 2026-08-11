@@ -1,5 +1,8 @@
 import type { ReactNode } from "react";
 
+import logoNavy from "@/assets/logo-navy.png.asset.json";
+import logoLight from "@/assets/logo-light.png.asset.json";
+
 export function Sheet({
   children,
   index,
@@ -45,26 +48,13 @@ export function Wordmark({
   light?: boolean;
   size?: number;
 }) {
-  const color = light ? "var(--paper)" : "var(--navy)";
   return (
-    <div className="inline-flex flex-col items-start" style={{ color }}>
-      <span
-        className="font-display font-semibold uppercase leading-none"
-        style={{ fontSize: `${20 * size}pt`, letterSpacing: "0.14em" }}
-      >
-        Vianna
-      </span>
-      <span
-        className="mt-[1.6mm] font-display uppercase leading-none"
-        style={{
-          fontSize: `${6.4 * size}pt`,
-          letterSpacing: "0.44em",
-          opacity: light ? 0.75 : 0.6,
-        }}
-      >
-        Vidros e Esquadrias
-      </span>
-    </div>
+    <img
+      src={light ? logoLight.url : logoNavy.url}
+      alt="Vianna Vidros e Esquadrias"
+      className="block w-auto object-contain"
+      style={{ height: `${24 * size}mm` }}
+    />
   );
 }
 
