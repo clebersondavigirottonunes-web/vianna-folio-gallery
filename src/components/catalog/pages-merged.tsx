@@ -108,7 +108,7 @@ export function PageCompany() {
         </div>
       </div>
 
-      <div className="absolute inset-x-[13mm] top-[150mm]">
+      <div className="absolute inset-x-[13mm] top-[146mm]">
         <span className="eyebrow" style={{ color: "var(--navy)" }}>
           Posicionamento
         </span>
@@ -133,7 +133,7 @@ export function PageCompany() {
         </div>
       </div>
 
-      <div className="absolute inset-x-[13mm] bottom-[20mm]">
+      <div className="absolute inset-x-[13mm] bottom-[18mm]">
         <div className="hairline mb-[5mm]" />
         <span className="eyebrow text-[6.6pt]" style={{ color: "var(--navy)" }}>
           Do primeiro contato à instalação
