@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type ReactElement } from "react";
 
 import { PageAluminum, PageCover, PageGlass } from "@/components/catalog/pages-a";
 import { PageClosing, PageFinishes, PageSolutions } from "@/components/catalog/pages-b";
@@ -41,7 +41,7 @@ const MODES: { id: Mode; label: string }[] = [
 const front = [PageCover, PageCompany, PageAluminum, PageGlass];
 const back = [PageFinishes, PageSolutions, PagePortfolioCases, PageClosing];
 
-function Spread({ pages }: { pages: (() => JSX.Element)[] }) {
+function Spread({ pages }: { pages: (() => ReactElement)[] }) {
   return (
     <div
       className="relative flex bg-paper shadow-[0_24px_80px_-32px_rgba(16,24,40,0.5)]"
