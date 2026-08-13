@@ -1,7 +1,6 @@
 import { Figure, Sheet, Wordmark } from "./Sheet";
 
 import cover from "@/assets/cover.jpg";
-import interior1 from "@/assets/interior-1.jpg";
 import detailFrame from "@/assets/detail-frame.jpg";
 import glassFacade from "@/assets/glass-facade.jpg";
 
@@ -53,166 +52,7 @@ export function PageCover() {
   );
 }
 
-/* ---------------- 02 — APRESENTAÇÃO ---------------- */
-export function PagePresentation() {
-  return (
-    <Sheet index={2} label="Apresentação">
-      <Figure
-        src={interior1}
-        alt="Sala minimalista com grandes portas de correr em alumínio e vidro"
-        className="absolute left-0 top-0 h-[196mm] w-[70mm]"
-      />
-      <div className="absolute left-[13mm] top-[202mm] w-[56mm]">
-        <div className="hairline mb-[4mm]" />
-        <span className="caption">Residencial · Grandes vãos</span>
-        <p className="font-serif mt-[10mm] text-[15pt] italic leading-[1.35]" style={{ color: "var(--navy)" }}>
-          Vidro e alumínio
-          <br />
-          medidos, cortados
-          <br />
-          e instalados
-          <br />
-          para um projeto só.
-        </p>
-      </div>
-
-      <div className="absolute right-[13mm] top-[24mm] w-[74mm]">
-        <span className="eyebrow" style={{ color: "var(--azure)" }}>
-          A empresa
-        </span>
-        <h2 className="display-lg mt-[7mm]" style={{ fontSize: "22pt" }}>
-          Experiência
-          <br />
-          que se
-          <br />
-          transforma em
-          <br />
-          qualidade.
-        </h2>
-
-        <div className="hairline my-[9mm]" />
-
-        <p className="body-text">
-          Há mais de 15 anos, a Vianna Vidros e Esquadrias atua no desenvolvimento de soluções em
-          vidro e alumínio para projetos residenciais, comerciais e corporativos.
-        </p>
-        <p className="body-text mt-[5mm]">
-          Com sede em Santa Rosa, atendemos toda a região e, conforme a necessidade de cada projeto,
-          também atuamos em outras regiões do Brasil e fora do país.
-        </p>
-
-        <div className="hairline mt-[12mm]" />
-        <div className="mt-[8mm] flex items-end gap-[6mm]">
-          <span
-            className="font-display leading-[0.8]"
-            style={{ fontSize: "48pt", fontWeight: 600, color: "var(--navy)", letterSpacing: "-0.04em" }}
-          >
-            +15
-          </span>
-          <span className="eyebrow mb-[3mm]" style={{ lineHeight: 1.8 }}>
-            Anos de
-            <br />
-            experiência
-          </span>
-        </div>
-      </div>
-
-      <div className="absolute bottom-[26mm] right-[13mm] w-[74mm]">
-        <div className="hairline mb-[5mm]" />
-        <span className="caption">Santa Rosa · Rio Grande do Sul · Brasil</span>
-      </div>
-
-    </Sheet>
-  );
-}
-
-/* ---------------- 03 — POSICIONAMENTO ---------------- */
-const concepts = [
-  {
-    n: "01",
-    t: "Qualidade",
-    d: "Materiais selecionados e execução conferida etapa por etapa, do perfil ao acabamento final.",
-  },
-  {
-    n: "02",
-    t: "Precisão",
-    d: "Medição técnica e produção sob medida para que cada peça encontre exatamente o seu vão.",
-  },
-  {
-    n: "03",
-    t: "Prazo",
-    d: "Planejamento de produção e instalação alinhado ao cronograma da obra.",
-  },
-  {
-    n: "04",
-    t: "Experiência",
-    d: "Mais de uma década e meia interpretando projetos de arquitetura e transformando-os em obra.",
-  },
-];
-
-const process = [
-  ["01", "Conversa"],
-  ["02", "Projeto e orçamento"],
-  ["03", "Medição"],
-  ["04", "Produção"],
-  ["05", "Instalação"],
-  ["06", "Entrega"],
-];
-
-export function PagePositioning() {
-  return (
-    <Sheet index={3} label="Posicionamento">
-      <div className="absolute inset-x-[13mm] top-[26mm]">
-        <span className="eyebrow" style={{ color: "var(--azure)" }}>
-          Posicionamento
-        </span>
-        <h2 className="display-xl mt-[8mm] max-w-[142mm]">
-          Mais do que produtos.
-          <br />
-          Entregamos soluções.
-        </h2>
-      </div>
-
-      <div className="absolute inset-x-[13mm] top-[112mm] grid grid-cols-2 gap-x-[14mm] gap-y-[16mm]">
-        {concepts.map((c) => (
-          <div key={c.n}>
-            <div className="hairline mb-[6mm]" />
-            <span
-              className="font-display text-[8pt] tracking-[0.24em]"
-              style={{ color: "var(--azure)" }}
-            >
-              {c.n}
-            </span>
-            <h3 className="display-md mt-[4mm]">{c.t}</h3>
-            <p className="body-text mt-[3.5mm] text-[9pt]">{c.d}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="absolute inset-x-[13mm] bottom-[24mm]">
-        <div className="hairline mb-[6mm]" />
-        <span className="eyebrow" style={{ color: "var(--navy)" }}>
-          Do primeiro contato à instalação
-        </span>
-        <div className="mt-[6mm] flex justify-between">
-          {process.map(([n, t]) => (
-            <div key={n} className="w-[21mm]">
-              <span
-                className="font-display block text-[13pt] font-medium leading-none"
-                style={{ color: "var(--navy)" }}
-              >
-                {n}
-              </span>
-              <span className="caption mt-[2.5mm] block text-[6pt] leading-[1.5]">{t}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Sheet>
-  );
-}
-
-/* ---------------- 04 — ESQUADRIAS DE ALUMÍNIO ---------------- */
+/* ---------------- 03 — ESQUADRIAS DE ALUMÍNIO ---------------- */
 const lines = [
   ["Suprema", "Grandes vãos e folhas amplas com perfis reforçados."],
   ["Gold", "Versatilidade para janelas e portas de uso residencial."],
@@ -223,7 +63,7 @@ const lines = [
 
 export function PageAluminum() {
   return (
-    <Sheet index={4} label="Esquadrias de alumínio">
+    <Sheet index={3} label="Esquadrias de alumínio">
       <Figure
         src={detailFrame}
         alt="Detalhe de perfil de esquadria de alumínio preto encontrando o vidro"
@@ -277,7 +117,7 @@ export function PageAluminum() {
   );
 }
 
-/* ---------------- 05 — VIDROS ---------------- */
+/* ---------------- 04 — VIDROS ---------------- */
 const glasses = [
   ["Temperado", "Resistência mecânica e segurança para grandes superfícies."],
   ["Laminado", "Duas lâminas unidas por película: segurança e conforto acústico."],
@@ -291,7 +131,7 @@ const glasses = [
 
 export function PageGlass() {
   return (
-    <Sheet index={5} label="Vidros">
+    <Sheet index={4} label="Vidros">
       <Figure
         src={glassFacade}
         alt="Fachada envidraçada refletindo o céu"
