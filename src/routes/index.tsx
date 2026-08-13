@@ -14,6 +14,7 @@ import {
   PagePortfolio,
   PageSolutions,
 } from "@/components/catalog/pages-b";
+import { PageCases } from "@/components/catalog/pages-cases";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +38,7 @@ export const Route = createFileRoute("/")({
   component: Catalog,
 });
 
-const TOTAL = 9;
+const TOTAL = 10;
 
 function Catalog() {
   const [current, setCurrent] = useState(1);
@@ -85,6 +86,7 @@ function Catalog() {
         <PageFinishes />
         <PageSolutions />
         <PagePortfolio />
+        <PageCases />
         <PageClosing />
       </div>
 

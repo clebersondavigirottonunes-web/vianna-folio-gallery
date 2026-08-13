@@ -187,7 +187,7 @@ export function PagePortfolio() {
 /* ---------------- 09 — ENCERRAMENTO ---------------- */
 export function PageClosing() {
   return (
-    <Sheet index={9} label="Encerramento" dark bleed>
+    <Sheet index={10} label="Encerramento" dark bleed>
       <Figure
         src={closing}
         alt="Fachada contemporânea iluminada ao anoitecer"
