@@ -1,13 +1,11 @@
 import { Figure, Sheet, Wordmark } from "./Sheet";
 
-import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import solutionsImg from "@/assets/solutions.jpg";
 import corporate from "@/assets/corporate.jpg";
 import closing from "@/assets/closing.jpg";
 
-/* ---------------- 06 — CORES & ACABAMENTOS ---------------- */
+/* ---------------- 05 — CORES & ACABAMENTOS ---------------- */
 const finishes: { name: string; note: string; style: React.CSSProperties }[] = [
   { name: "Preto", note: "Fosco texturizado", style: { background: "linear-gradient(150deg,#26282b,#111315)" } },
   { name: "Branco", note: "Liso acetinado", style: { background: "linear-gradient(150deg,#ffffff,#e9eaec)" } },
@@ -21,7 +19,7 @@ const finishes: { name: string; note: string; style: React.CSSProperties }[] = [
 
 export function PageFinishes() {
   return (
-    <Sheet index={6} label="Cores e acabamentos">
+    <Sheet index={5} label="Cores e acabamentos">
       <div className="absolute inset-x-[13mm] top-[24mm] flex items-end justify-between">
         <div>
           <span className="eyebrow" style={{ color: "var(--azure)" }}>
@@ -62,7 +60,7 @@ export function PageFinishes() {
   );
 }
 
-/* ---------------- 07 — SOLUÇÕES ---------------- */
+/* ---------------- 06 — SOLUÇÕES ---------------- */
 const solutions = [
   "Portas",
   "Janelas",
@@ -74,7 +72,7 @@ const solutions = [
 
 export function PageSolutions() {
   return (
-    <Sheet index={7} label="Soluções">
+    <Sheet index={6} label="Soluções">
       <Figure
         src={solutionsImg}
         alt="Entrada de edifício com porta de vidro e divisórias de alumínio"
@@ -134,60 +132,10 @@ export function PageSolutions() {
   );
 }
 
-/* ---------------- 08 — PORTFÓLIO ---------------- */
-const projects = [
-  { nome: "Casa Pátio", local: "Santa Rosa · RS", sol: "Grandes vãos · Alumínio preto" },
-  { nome: "Residência Horizonte", local: "Região Noroeste · RS", sol: "Portas de correr · Vidro laminado" },
-  { nome: "Mirante", local: "Litoral · SC", sol: "Fachada · Vidro temperado" },
-];
-
-export function PagePortfolio() {
-  return (
-    <Sheet index={8} label="Portfólio">
-      <div className="absolute inset-x-[13mm] top-[24mm]">
-        <span className="eyebrow" style={{ color: "var(--azure)" }}>
-          Portfólio
-        </span>
-        <h2 className="display-lg mt-[7mm] max-w-[100mm] text-[19pt]">
-          Projetos que
-          <br />
-          falam por nós.
-        </h2>
-      </div>
-
-      <Figure
-        src={project1}
-        alt="Residência contemporânea ao anoitecer com grandes painéis de vidro"
-        className="absolute left-[13mm] top-[76mm] h-[104mm] w-[90mm]"
-      />
-      <div className="absolute right-[13mm] top-[76mm] w-[44mm]">
-        {projects.map((p) => (
-          <div key={p.nome} className="mb-[9mm]">
-            <div className="hairline mb-[4mm]" />
-            <h3 className="display-md text-[10pt]">{p.nome}</h3>
-            <span className="caption mt-[2mm] block text-[5.8pt]">{p.local}</span>
-            <span className="caption mt-[1mm] block text-[5.8pt]">{p.sol}</span>
-          </div>
-        ))}
-        <p className="body-text text-[7.6pt] leading-[1.6]">
-          Imagens de referência arquitetônica utilizadas como placeholder até a inclusão do registro
-          fotográfico das obras.
-        </p>
-      </div>
-
-      <Figure
-        src={project3}
-        alt="Grande vão aberto integrando sala e terraço com piscina"
-        className="absolute inset-x-[13mm] bottom-[24mm] h-[76mm]"
-      />
-    </Sheet>
-  );
-}
-
-/* ---------------- 09 — ENCERRAMENTO ---------------- */
+/* ---------------- 08 — ENCERRAMENTO ---------------- */
 export function PageClosing() {
   return (
-    <Sheet index={10} label="Encerramento" dark bleed>
+    <Sheet index={8} label="Encerramento" dark bleed>
       <Figure
         src={closing}
         alt="Fachada contemporânea iluminada ao anoitecer"
