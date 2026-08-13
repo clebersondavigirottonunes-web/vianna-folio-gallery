@@ -108,7 +108,7 @@ export function PageCompany() {
         </div>
       </div>
 
-      <div className="absolute inset-x-[13mm] top-[158mm]">
+      <div className="absolute inset-x-[13mm] top-[150mm]">
         <span className="eyebrow" style={{ color: "var(--navy)" }}>
           Posicionamento
         </span>
@@ -116,7 +116,7 @@ export function PageCompany() {
           Mais do que produtos. Entregamos soluções.
         </h3>
 
-        <div className="mt-[9mm] grid grid-cols-2 gap-x-[12mm] gap-y-[9mm]">
+        <div className="mt-[9mm] grid grid-cols-2 gap-x-[12mm] gap-y-[8mm]">
           {concepts.map((c) => (
             <div key={c.n}>
               <div className="hairline mb-[4mm]" />
@@ -133,7 +133,7 @@ export function PageCompany() {
         </div>
       </div>
 
-      <div className="absolute inset-x-[13mm] bottom-[22mm]">
+      <div className="absolute inset-x-[13mm] bottom-[20mm]">
         <div className="hairline mb-[5mm]" />
         <span className="eyebrow text-[6.6pt]" style={{ color: "var(--navy)" }}>
           Do primeiro contato à instalação
@@ -250,16 +250,16 @@ export function PagePortfolioCases() {
         alt="Residência contemporânea ao anoitecer com grandes painéis de vidro"
         title="Residência Horizonte"
         credit="Projeto: Scherer Arquitetura · Esquadrias Linha Suprema"
-        className="absolute inset-x-[13mm] top-[46mm] h-[66mm]"
+        className="absolute inset-x-[13mm] top-[46mm] h-[70mm]"
       />
 
-      <div className="absolute inset-x-[13mm] top-[116mm] grid grid-cols-2 gap-[3mm]">
+      <div className="absolute inset-x-[13mm] top-[120mm] grid grid-cols-2 gap-[3mm]">
         {cases.map((c) => (
-          <CaseFigure key={c.title} {...c} className="h-[48mm]" />
+          <CaseFigure key={c.title} {...c} className="h-[52mm]" />
         ))}
       </div>
 
-      <div className="absolute inset-x-[13mm] top-[222mm]">
+      <div className="absolute inset-x-[13mm] top-[234mm]">
         <div className="hairline mb-[5mm]" />
         <div className="grid grid-cols-3 gap-x-[8mm]">
           {projects.map((p) => (
